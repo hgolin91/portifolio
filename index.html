@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Minha Página Web</title>
+</head>
+
+<body>
+    <header class="bg-dark text-white">
+        <div class="container">
+            <h1>Atividade Pratica 10 - Containers com Bootstrap</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"> <a class="nav-link text-white" href="#">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link text-white" href="#">Sobre</a> </li>
+                    <li class="nav-item"> <a class="nav-link text-white" href="#">Contato</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container mt-3">
+        <section class="container-fluid p-2 bg-primary text-center">
+            <h2>Secao 1</h2>
+            <p>Alguma coisa aqui.</p>
+        </section>
+        <section class="container-fluid p-2 bg-danger text-center">
+            <h2>Secao 2</h2>
+            <p>Outra coisa aqui.</p>
+        </section>
+
+        <section class="container-fluid p-2 bg-warning text-center">
+            <h2>Secao 3</h2>
+            <p>Mais outra coisa aqui.</p>
+        </section>
+    </div>
+    <footer class="bg-dark text-white mt-3">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Minha Página Web</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
